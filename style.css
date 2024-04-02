@@ -1,0 +1,50 @@
+   *body{
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+header{
+    background-color: rgb(31, 32, 31)  ;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+}
+
+nav li  {
+    text-align: center;
+   font-family: 'Courier New', Courier, monospace;  
+   display: inline-block;
+}
+
+nav ul li a{
+    display: inline;
+    text-decoration: none;
+    color: blue;
+    background-color: yellowgreen;
+    padding: 15px;
+    cursor: pointer;
+    margin: 45px;
+}
+
+section{
+    text-align: center;
+    text-decoration: none;
+    list-style:none;
+}
+
+footer{
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
