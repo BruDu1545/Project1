@@ -65,3 +65,9 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+.text-agradecimento{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}

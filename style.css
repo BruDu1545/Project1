@@ -39,6 +39,11 @@ section{
     list-style:none;
 }
 
+p{
+    margin: 25px;
+    text-align: center;
+}
+
 footer{
     background-color: #111;
     color: white;
