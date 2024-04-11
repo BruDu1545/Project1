@@ -12,7 +12,7 @@ nav{
 }
 
 nav li  {
-    text-align: center;
+   text-align: center;
    font-family: 'Courier New', Courier, monospace;  
    display: inline-block;
 }
@@ -28,7 +28,7 @@ nav ul li a{
 }
 
 
-.conteiner{
+.conteiner{                             
     max-width: 800px;
     margin: 0 auto;  
     padding: 20px;  
@@ -88,8 +88,8 @@ footer{
     background-color: #111;
     color: white;
     text-align: center;
+    margin-top: 50px;
     padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
