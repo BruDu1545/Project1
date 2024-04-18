@@ -29,7 +29,7 @@ body::before {
   z-index: -1;
 }
 
-.slide-container {
+.slide-conteiner {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     height: 70vh;
     width: 70vw;
@@ -61,6 +61,7 @@ body::before {
   padding: 20px;
   font-size: 30px;
   border: 2px solid orange;
+  border-radius: 15px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
