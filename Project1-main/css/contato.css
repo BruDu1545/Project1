@@ -1,0 +1,33 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    margin: 10px 0;
+}
+
+input, textarea{
+    margin: 5px 0;
+    padding: 5px;
+    width: 300px;
+}
+
+button{
+    padding: 8px;
+    background-color: aquamarine;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+.text-agradecimento{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
