@@ -99,15 +99,21 @@ header a:hover {
 
 /* Area da compra */
 
+.separation{
+  border: #2f2f2f 1px solid;
+  border-radius: 18px;
+}
+
 .area-for-buy h2 {
   text-align: center;
-  font-size: 26px;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .area-for-buy p {
-  margin: 25px;
+  margin: 30px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -121,6 +127,7 @@ header a:hover {
 
 .products-services {
   display: flex;
+  justify-content: space-around;
 }
 
 .space-box {
@@ -132,12 +139,14 @@ header a:hover {
   border: black 2px solid;
   text-align: center;
   line-height: 1;
+  width: 20%;
 }
 
 .header-box {
   background-color: #197d1a;
   color: #fff;
   border-radius: 15px;
+  border: #2f2f2f 1px solid;
   padding: 1%;
 }
 
@@ -145,17 +154,21 @@ header a:hover {
   font-size: 26px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 10px;
 }
 
 .header-box span {
   font-size: 13px;
-  margin-top: 0;
   display: block;
 }
 
 .main-box p {
   font-weight: 900;
+}
+
+.footer-box{
+  border: #2f2f2f 1px solid;
+  border-radius: 0 0 15px 15px;
+  padding: 5px;
 }
 
 .footer-box button {
