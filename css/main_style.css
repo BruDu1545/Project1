@@ -6,14 +6,16 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #ffffff;
 }
 
 /* Estilização do cabeçalho */
 header {
-  background-color: #333;
+  background-color: #3176b8;
   color: #fff;
-  padding: 10px;
-  text-align: center;
+  padding: 15px;
+  display: grid;
+  justify-items: end;
 }
 
 header nav {
@@ -25,28 +27,37 @@ header nav {
 header ul {
   display: flex;
   list-style-type: none;
+  align-items: center;
 }
 
 header li {
-  margin-left: 20px;
+  margin-right: 50px;
 }
 
 header a {
   color: #fff;
-  text-decoration: none;
+  text-decoration:none;
 }
 
 header a:hover {
-  color: #ccc;
-  transition: color 0.3s ease;
-  border-bottom: 2px solid #ccc;
+  transform: scale(1.8);
+  color: #fff;
+  border-bottom: 2px solid #fff;
   padding-bottom: 2px;
 }
 
-/*img{
-    width: 150px;
-    height: auto;
-}*/
+header img {
+  width: 150px;
+  height: auto;
+  list-style: none; 
+  position: relative;
+  left: -200%;
+  transition: 0.5s ease-in-out;
+}
+
+header img:hover{
+  transform: scale(1.1);
+}
 
 /* configuração do menu responcivo */
 
@@ -57,7 +68,7 @@ header a:hover {
 .toggle-navbar input {
   display: none;
 }
-/*
+
 @media (max-width: 768px) {
     .navbar-header{
         display: none;
@@ -93,14 +104,19 @@ header a:hover {
     .toggle-unorded-list-header li {
         margin: 10px 0;
     }
-}*/
+}
 
 /* Face da pagina */
+
+.img-front-face{
+  height: 800px;
+  width: 100%;
+}
 
 /* Area da compra */
 
 .separation{
-  border: #2f2f2f 1px solid;
+  border: #000 1px solid;
   border-radius: 18px;
 }
 
@@ -118,11 +134,9 @@ header a:hover {
 }
 
 .area-for-buy {
-  margin: 2%;
   background-color: #2f2f2f;
   padding: 2%;
   color: #fff;
-  border-radius: 15px;
 }
 
 .products-services {
@@ -132,21 +146,21 @@ header a:hover {
 
 .space-box {
   background-color: #fff;
-  color: #2f2f2f;
+  color: #000;
   padding: 20px;
   border-radius: 15px;
   margin-right: 2%;
   border: black 2px solid;
   text-align: center;
-  line-height: 1;
   width: 20%;
+  flex-wrap: wrap;
 }
 
 .header-box {
-  background-color: #197d1a;
+  background-color: #3176b8;
   color: #fff;
   border-radius: 15px;
-  border: #2f2f2f 1px solid;
+  border: #000 1px solid;
   padding: 1%;
 }
 
@@ -156,17 +170,12 @@ header a:hover {
   letter-spacing: 1px;
 }
 
-.header-box span {
-  font-size: 13px;
-  display: block;
-}
-
 .main-box p {
   font-weight: 900;
 }
 
 .footer-box{
-  border: #2f2f2f 1px solid;
+  border: #000 1px solid;
   border-radius: 0 0 15px 15px;
   padding: 5px;
 }
@@ -175,11 +184,11 @@ header a:hover {
   padding: 5%;
   border-radius: 15px;
   border: none;
-  background-color: #197d1a;
+  background-color: #3176b8;
 }
 
 .footer-box button:hover {
-  background-color: #176a13;
+  background-color: #131313;
 }
 
 .footer-box button a {
@@ -192,9 +201,7 @@ header a:hover {
 .about-services {
   background-color: #2f2f2f;
   padding: 1% 5% 5% 5%;
-  margin: 5%;
   color: #fff;
-  border-radius: 15px;
   text-align: left;
 }
 
@@ -236,7 +243,8 @@ header a:hover {
 
 .certificates {
   margin: 5%;
-  padding: 15px;
+  padding: 25px;
+  padding-bottom: 50px;
   background-color: #333;
   border-radius: 15px;
   text-align: center;
@@ -249,13 +257,13 @@ header a:hover {
 
 .content {
   align-items: center;
-  background-color: #ccc;
+  background-color: #fff;
   width: 20%;
   margin-right: 1px;
   padding: 0px 10px 0px 10px;
   border: 2px solid #fff;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .content:hover {
@@ -323,7 +331,7 @@ header a:hover {
 }
 
 .project-finished {
-  background-color: #ccc;
+  background-color: #fff;
   color: #2f2f2f;
   border: 1px solid #fff;
   padding: 20px;
@@ -334,6 +342,12 @@ header a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.5s ease;
+}
+
+.project-finished:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px #ff1100d5;
 }
 
 .project-finished img {
@@ -350,11 +364,12 @@ header a:hover {
   text-align: center;
 }
 
-.title-desc {
+
+/*.title-desc {
   font-size: 14px;
   margin-bottom: 15px;
   text-align: center;
-}
+}*/
 
 /* Footer */
 
