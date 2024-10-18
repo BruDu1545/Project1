@@ -14,14 +14,12 @@ header {
   background-color: #3176b8;
   color: #fff;
   padding: 15px;
-  display: grid;
-  justify-items: end;
 }
 
 header nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 header ul {
@@ -31,12 +29,13 @@ header ul {
 }
 
 header li {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 header a {
   color: #fff;
   text-decoration:none;
+  font-size: 18px;
 }
 
 header a:hover {
@@ -48,10 +47,9 @@ header a:hover {
 
 header img {
   width: 150px;
+  margin-left: 15px;
   height: auto;
   list-style: none; 
-  position: relative;
-  left: -200%;
   transition: 0.5s ease-in-out;
 }
 
@@ -268,7 +266,7 @@ header img:hover{
 
 .content:hover {
   transform: scale(1.01);
-  box-shadow: 2px 2px 5px #fff;
+  box-shadow: 2px 2px 5px #3176b8;
 }
 
 .content img {
@@ -347,7 +345,7 @@ header img:hover{
 
 .project-finished:hover{
   transform: scale(1.1);
-  box-shadow: 5px 5px 5px #ff1100d5;
+  box-shadow: 5px 5px 5px #3176b8;
 }
 
 .project-finished img {
