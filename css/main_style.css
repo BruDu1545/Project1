@@ -6,7 +6,12 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #ffffff;
+  background-image: url(/img/logoTDS.png);  
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;
+  
 }
 
 /* Estilização do cabeçalho */
@@ -19,7 +24,7 @@ header {
 header nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 header ul {
@@ -47,7 +52,6 @@ header a:hover {
 
 header img {
   width: 150px;
-  margin-left: 15px;
   height: auto;
   list-style: none; 
   transition: 0.5s ease-in-out;
@@ -106,10 +110,74 @@ header img:hover{
 
 /* Face da pagina */
 
-.img-front-face{
-  height: 800px;
-  width: 100%;
+.front-face{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  margin: 5%;
 }
+
+.front-face h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+}
+
+
+.front-face span {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffe600;
+}
+
+.front-face p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.front-face button{
+  width: 20%;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+.btn-about-for{
+  background-color: #3176b8;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-about-for:hover {
+  background-color: #124370;
+  color: #fff;
+}
+
+.btn-contact-us{
+  background-color: #007bff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-contact-us:hover {
+  background-color: #004793;
+  color: #fff;
+}
+
 
 /* Area da compra */
 
