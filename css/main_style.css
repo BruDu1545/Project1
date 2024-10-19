@@ -6,7 +6,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-image: url(/img/logoTDS.png);  
+  background-image: url(/img/bg_front_face.jpg);  
   background-size: cover; 
   background-repeat: no-repeat; 
   background-position: center;
@@ -16,8 +16,7 @@ body {
 
 /* Estilização do cabeçalho */
 header {
-  background-color: #3176b8;
-  color: #fff;
+  background-color: #000;
   padding: 15px;
 }
 
@@ -40,13 +39,15 @@ header li {
 header a {
   color: #fff;
   text-decoration:none;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 900;
+  transition: 0.5s ease-in-out;
 }
 
 header a:hover {
   transform: scale(1.8);
-  color: #fff;
-  border-bottom: 2px solid #fff;
+  color: #871217;
+  border-bottom: 2px solid #871217;
   padding-bottom: 2px;
 }
 
@@ -133,7 +134,7 @@ header img:hover{
 }
 
 .front-face p {
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
 }
 
@@ -146,35 +147,33 @@ header img:hover{
 }
 
 .btn-about-for{
-  background-color: #3176b8;
+  background-color: #871217;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
   margin-right: 10px;
   margin-top: 10px;
-  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
 .btn-about-for:hover {
-  background-color: #124370;
+  background-color: #781015;
   color: #fff;
 }
 
 .btn-contact-us{
-  background-color: #007bff;
+  background-color: #871217;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
   margin-top: 10px;
-  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
 .btn-contact-us:hover {
-  background-color: #004793;
+  background-color: #781015;
   color: #fff;
 }
 
@@ -200,7 +199,7 @@ header img:hover{
 }
 
 .area-for-buy {
-  background-color: #2f2f2f;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 2%;
   color: #fff;
 }
@@ -223,7 +222,7 @@ header img:hover{
 }
 
 .header-box {
-  background-color: #3176b8;
+  background-color: #5b0c10;
   color: #fff;
   border-radius: 15px;
   border: #000 1px solid;
@@ -250,7 +249,8 @@ header img:hover{
   padding: 5%;
   border-radius: 15px;
   border: none;
-  background-color: #3176b8;
+  background-color: #5b0c10;
+  transition: 0.5s ease-in-out;
 }
 
 .footer-box button:hover {
@@ -265,7 +265,7 @@ header img:hover{
 /* About our services */
 
 .about-services {
-  background-color: #2f2f2f;
+  background-color: #140909;
   padding: 1% 5% 5% 5%;
   color: #fff;
   text-align: left;
@@ -308,11 +308,9 @@ header img:hover{
 }
 
 .certificates {
-  margin: 5%;
   padding: 25px;
   padding-bottom: 50px;
   background-color: #333;
-  border-radius: 15px;
   text-align: center;
 }
 
@@ -358,18 +356,27 @@ header img:hover{
 
 .finished-projects {
   background-color: #2f2f2f;
-  padding: 3% 5%;
-  margin: 5%;
+  padding: 25px;
   color: #fff;
-  border-radius: 15px;
   text-align: center;
   position: relative;
 }
 
+.slide-projects{
+  display: flex;
+  background-color: #fff;
+  padding: 3%;
+  margin: 0px 30px 0px 25px;
+  border-radius: 15px;
+  justify-content: space-around;
+}
+
+
 .btn-arrow-left,
 .btn-arrow-right {
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff; 
   border-radius: 15px;
   padding: 50px 15px 50px 15px;
   cursor: pointer;
@@ -399,7 +406,7 @@ header img:hover{
 .project-finished {
   background-color: #fff;
   color: #2f2f2f;
-  border: 1px solid #fff;
+  border: 2px solid #871217;
   padding: 20px;
   border-radius: 15px;
   margin: 10px;
@@ -413,7 +420,7 @@ header img:hover{
 
 .project-finished:hover{
   transform: scale(1.1);
-  box-shadow: 5px 5px 5px #3176b8;
+  box-shadow: 5px 5px 5px #871217;
 }
 
 .project-finished img {

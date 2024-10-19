@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login_style.css">
-    
+    <link rel="icon" href="/img/logo.jpg">
+    <script src="/js/login.js"></script>
+    <link rel="stylesheet" href="/css/login_style.css">
     <title>Login v1.0 - CAVS Software</title>
 </head>
 
@@ -13,8 +14,8 @@
 
     <main>
         <div class="all">
-            <section class="login-form">
-                <form class="form" id="login-form">
+            <section class="login_form">
+                <form class="form"  id="login_form">
                     <h1>Login</h1>
 
                     <label for="user">Insira seu usuario: </label>
@@ -23,15 +24,35 @@
                     <label for="password">Insira sua senha: </label>
                     <input type="password" name="password" id="password" placeholder="Senha" required>
 
-                    <div class="buttons">                
-                        <button class="btn-1" type="submit">Acessar</button>
-                        <button class="btn-2" type="submit">Novo usuario</button>
+                    <div class="options">   
+                        <button class="btn-1" type="submit">Acessar</button><br><br>
+                        <span>Novo usuario?<button class="btn-2" onclick="layoutRegister()">Cadastre-se</button></span>
                     </div>
                 </form>
             </section>
-            <img src="../img/logo.jpg" alt="">
+            <section class="register_form">
+                <form class="form" id="register_form">
+                    <h1>Cadastrar</h1>
+
+                    <label for="email">Insira seu email: </label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+
+                    <label for="fone_number">Insira seu telefone: </label>
+                    <input type="text" name="fone_number" id="fone_number" placeholder="(00) 0 0000-0000" required>
+
+                    <label for="user">Insira seu usuario: </label>
+                    <input type="text" name="user" id="user" placeholder="Usuario" required>
+
+                    <label for="password">Insira sua senha: </label>
+                    <input type="password" name="password" id="password" placeholder="Senha" required>
+
+                    <div class="options">   
+                        <button class="btn-1" type="submit">Cadastrar</button><br><br>
+                        <span>Já possiu conta?<button class="btn-2" onclick="layoutLogin()">Acessar</button></span>
+                    </div>
+                </form>
+            </section>
         </div>
     </main>
-    <script src="../js/script.js"></script>
 </body>
 </html>
